@@ -4,8 +4,8 @@
 CPP = g++
 CPPFLAGS = -Wall -g -Werror
 
-experiment: experiment.cpp color.cpp
-				$(CPP) $(CPPFLAGS) -o experiment experiment.cpp color.cpp -lncurses
+map: map.cpp
+				$(CPP) $(CPPFLAGS) -o map map.cpp -lncurses
 
 clean:
-				-rm -f experiment
+				-rm -f map
